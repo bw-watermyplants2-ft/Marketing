@@ -13,9 +13,6 @@ body {
 .container {
   padding: 2% 9%;
 }
-.bottom-content {
-  color: cornflowerblue;
-}
 header h1 {
   text-align: center;
   background-image: url(https://media.giphy.com/media/3oEjHOUcNRKgpqTHiM/source.gif);
@@ -42,7 +39,11 @@ nav a {
 }
 .top-content {
   color: #68c4af;
+  margin-right: 5%;
 }
 img {
   width: 100%;
+}
+.bottom-content {
+  color: cornflowerblue;
 }
