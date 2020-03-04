@@ -62,6 +62,10 @@ nav a {
   color: #232323;
   padding-top: 2%;
   font-size: 15px;
+  transition: 0.4s ease;
+}
+nav a:hover {
+  font-size: 18.5px;
 }
 footer {
   width: 100%;
@@ -88,6 +92,7 @@ footer {
   background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
   background-size: cover;
   background-repeat: repeat;
+  opacity: 0.95;
 }
 #bg {
   height: 100vh;
@@ -100,6 +105,7 @@ footer {
   width: 90%;
   height: 80%;
   display: flex;
+  margin-top: 8%;
 }
 .box {
   width: 31%;
@@ -149,6 +155,14 @@ button {
   left: 36%;
 }
 /* Use this mobile view */
+#title {
+  position: relative;
+  right: 8%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 3%;
+}
 .container {
   background: #58B19F;
   opacity: 0.75;
