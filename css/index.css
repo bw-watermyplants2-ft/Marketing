@@ -76,6 +76,8 @@ footer {
 .footer2 {
   background: #58B19F;
   opacity: 0.75;
+  height: 6em;
+  padding-top: 3%;
 }
 .wrapper {
   width: 100%;
@@ -170,4 +172,12 @@ button {
   justify-content: space-evenly;
   justify-content: center;
   align-items: center;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12%;
 }
