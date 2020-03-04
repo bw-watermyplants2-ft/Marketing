@@ -1,10 +1,18 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+  flex-direction: column;
+   flex: 1 1 auto;
+    height: 100vh; 
+  width: 100%; 
+  background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
+  background-size: cover;
+  background-repeat: repeat; 
+  }
+
 #bg{
     height: 100vh; 
-    width: 100%; 
-    background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
-    background-size: cover;
-    background-repeat: repeat; 
-    height: 100vH;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,41 +22,64 @@
 .content{
   width: 90%;
   height: 80%;
-  margin: 10px;
  display: flex;
-    justify-content: space-around;
-    align-items: center; 
 }
 
 .box{
-  width: 30%;
-  height: 100%;
-  display: flex;
+    width:31%;
+    height: 90%;
+    display: flex;
     justify-content: center;
     align-items: center; 
-  flex-wrap: wrap;
-  border-radius: 10px;
-  overflow: hidden; 
-  opacity: 0.8;
-}
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    overflow: hidden; 
+    opacity: 0.75;
+    transition: 0.3s ease;
+  }
+  
+  .box:hover{
+    width: 35%;
+    height: 100%;
+  }
+  
+  .box:hover img{
+    transform: rotate(15deg);
+  }
+  
+  .box .one img{
+    transition: 2s;
+  }
+  
+  .box .one{
+    width: 100%;
+    height: 50%;
+    background: #317873; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  .box .divider{
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  .box .two{
+    width: 100%;
+    height: 40%;
+    background: #dff9fb; 
+  }
 
 
-
-.box .one{
-  width: 100%;
-  height: 50%;
-  background: #317873; 
-}
-
-.box .divider{
-  width: 100%;
-  height: 10%;
-  background: #fff;
-}
-
-.box .two{
-  width: 100%;
-  height: 40%;
-  background: #dff9fb; 
-}
-
+  button{
+    position: relative;
+    left: 36%;
+  }
+  
