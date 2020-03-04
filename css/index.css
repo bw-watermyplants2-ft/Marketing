@@ -85,7 +85,10 @@ footer {
   height: 100%;
 }
 .box:hover img {
-  transform: rotate(10deg);
+  transform: rotate(15deg);
+}
+.box .one img {
+  transition: 2s;
 }
 .box .one {
   width: 100%;
@@ -94,9 +97,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.box .one img {
-  transition: 3s;
 }
 .box .divider {
   width: 100%;
