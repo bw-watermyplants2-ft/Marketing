@@ -5,45 +5,79 @@ html {
   font-size: 100%;
 }
 body {
-  max-width: 880px;
   width: 100%;
   margin: 0 auto;
-  background-color: #f0ffff70;
 }
-.container {
-  padding: 2% 9%;
-}
-header h1 {
-  text-align: center;
-  background-image: url(https://media.giphy.com/media/3oEjHOUcNRKgpqTHiM/source.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60vH;
+wrapper {
   width: 100%;
-  color: #575bff;
+  height: 100vh;
+}
+img {
+  width: 100%;
+  height: 80%;
+  margin-top: 13%;
 }
 nav {
   height: 7vh;
   display: flex;
   justify-content: space-around;
-  background-color: #b8dbd3;
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: lighten;
+  opacity: 0.68;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  /*   box-shadow: 0 5px 5px rgba()  figure out later 5min*/
 }
 nav a {
   text-decoration: none;
-  color: #575bff;
+  color: #232323;
   padding-top: 2%;
-  font-size: 19px;
+  font-size: 20px;
 }
-.main-content {
-  display: flex;
-}
-.top-content {
-  color: #68c4af;
-  margin-right: 5%;
-}
-img {
+#bg {
+  height: 100vh;
+  background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vH;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.bottom-content {
-  color: cornflowerblue;
+.content {
+  width: 90%;
+  height: 80%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.box .one {
+  width: 100%;
+  height: 50%;
+  background: #317873;
+}
+.box .divider {
+  width: 100%;
+  height: 10%;
+  background: #fff;
+}
+.box .two {
+  width: 100%;
+  height: 40%;
+  background: #dff9fb;
 }
