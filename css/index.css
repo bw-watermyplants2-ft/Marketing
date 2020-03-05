@@ -93,6 +93,15 @@ nav {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+nav a {
+  color: #232323;
+  padding-top: 2%;
+  font-size: 15px;
+  transition: 0.4s ease;
+}
+nav a:hover {
+  font-size: 18.5px;
+}
 @media (max-width: 800px) {
   nav {
     background: rgba(194, 210, 29, 0.3);
@@ -105,15 +114,6 @@ nav {
     height: 43vh;
     padding: 1em;
   }
-}
-nav a {
-  color: #232323;
-  padding-top: 2%;
-  font-size: 15px;
-  transition: 0.4s ease;
-}
-nav a:hover {
-  font-size: 18.5px;
 }
 .fas {
   padding-top: 2%;
@@ -214,9 +214,6 @@ footer {
 .box:hover img {
   transform: rotate(15deg);
 }
-.box .one img {
-  transition: 2s;
-}
 .box .one {
   width: 100%;
   height: 50%;
@@ -229,6 +226,9 @@ footer {
   .box .one {
     height: 55%;
   }
+}
+.box .one img {
+  transition: 2s;
 }
 .box .divider {
   width: 100%;
@@ -267,7 +267,7 @@ button {
 }
 @media (max-width: 500px) {
   button {
-    padding-left: 6%;
+    padding-left: 7%;
     height: 20px;
     font-size: 13px;
   }
@@ -298,10 +298,6 @@ button {
   .container {
     background: #bcf9d5;
   }
-}
-.container a {
-  text-decoration: none;
-  color: black;
 }
 .top-content {
   display: flex;

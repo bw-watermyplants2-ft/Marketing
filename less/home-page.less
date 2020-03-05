@@ -1,15 +1,13 @@
 .wrapper{
     width: 100%;
     display:flex;
-  flex-direction: column;
-   flex: 1 1 auto;
+    flex-direction: column;
+    flex: 1 1 auto;
     height: 100vh; 
-  background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
-  background-size: cover;
-  background-repeat: repeat; 
-  }
+    background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
+    background-size: cover;
+    background-repeat: repeat; 
 
-.wrapper{
     @media @phone{
         height:100%;
     }//this closes the media phone query for wrapper
@@ -25,19 +23,17 @@
   }
 
 .content{
-  width: 90%;
-  height: 80%;
- display: flex;
- margin-top: 8%;
-}
+    width: 90%;
+    height: 80%;
+    display: flex;
+    margin-top: 8%;
 
-.content{
     @media @phone{
-        width: 100%;
-        height: 100%;
-        display:flex;
-        flex-direction: column;
-        margin-top: 6%;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            margin-top: 6%;
     }//this closes the phone media query for content
 }//this closes the content
 
@@ -52,10 +48,8 @@
     overflow: hidden; 
     opacity: 0.75;
     transition: 0.3s ease;
-  }
-  
-  .box{
-      @media @phone{
+ 
+    @media @phone{
           width: 57%;
           height: 31vh;
           border-radius: 2rem; 
@@ -66,9 +60,7 @@
   .box:hover{
     width: 35%;
     height: 100%;
-  }
-  
-  .box:hover{
+
     @media @phone{
       height: 50%;
       width: 65%;
@@ -79,9 +71,7 @@
     transform: rotate(15deg);
   }
   
-  .box .one img{
-    transition: 2s;
-  }
+ 
 
   .box .one{
     width: 100%;
@@ -90,13 +80,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
   
-  .box .one{
-      @media @phone{
+    @media @phone{
           height: 55%;
-      }
-  }
+      }//this closes the phone media query for box one
+    
+    img{
+        transition: 2s;
+      }//this closes box one img
+
+  }//this closes box one
   
   .box .divider{
     width: 100%;
@@ -111,19 +104,16 @@
     width: 100%;
     height: 40%;
     background: #dff9fb; 
-  }
-
-  .box .two{
-      @media @phone{
+  
+    @media @phone{
           height: 45%;
       }//this closes phone media query for box two
-  }//this closes box two
 
-  .box .two{
-      @media @tablet{
+    @media @tablet{
         background: rgba(112, 181, 89, 0.7);
       }//this closes tablet media query for box two
   }//this closes box two
+
 
 button{
     cursor: pointer;
@@ -136,15 +126,13 @@ button{
     font-size: 14px;
     background-color: white;
     opacity: 0.8;
-}
- 
-button{
+
     @media @phone{
-        padding-left: 6%;
+        padding-left: 7%;
         height: 20px;
         font-size: 13px; 
-    }
-}
+    }//this closes the phone media query for button
+}//this closes the button
 
     
   
@@ -162,11 +150,12 @@ button{
     font-size: 2.5em; 
     text-align:center;
     margin-top: 3%;
-   }
 
-   #title:hover{
+  }//this closes the title
+
+  #title:hover{
     color: white;
-  }
+    }//this closes the hover for title
 
   .container{
     background: #58B19F;
@@ -177,18 +166,12 @@ button{
     display:flex;
     flex-direction: column;
    flex: 1 1 auto;
-  }
-  
-  .container{
+ 
     @media @tablet{
       background: #bcf9d5;  
     }//this closes the media query for container
   }//this closes the container
 
-  .container a{
-    text-decoration: none;
-    color: black;
-  }
   
   .top-content{
     display:flex;
@@ -196,9 +179,7 @@ button{
     justify-content: center;
     align-items: center; 
     padding-top: 5%;
-  }
-  
-  .top-content{
+ 
     @media @phone{
       display:flex;
       flex-direction: column;
@@ -210,9 +191,7 @@ button{
     justify-content: space-evenly;
     justify-content: center;
     align-items: center; 
-  }
-  
-  .bottom-content{
+ 
     @media @phone{
       display:flex;
       flex-direction: column;
@@ -229,22 +208,23 @@ button{
     margin-right: 12%;
     margin-bottom: 10%;
     transition: 0.8s ease;
-  }
-  
-  .person{
+
     @media @phone{
       margin-bottom: 10%;
     }//this closes the media query for person
   }//this closes person
 
-  .person:hover {
+.person:hover {
     font-size: 1.7rem; 
-  }
+  }//this closes the person hover
 
   .person img{
     transition: 3s;
-  }
+    }
 
-  .person:hover img{
-    transform: rotate(18deg);
-  }
+    .person:hover img{
+        transform: rotate(18deg);
+      }//this closes the image for person:hover
+
+ 
+

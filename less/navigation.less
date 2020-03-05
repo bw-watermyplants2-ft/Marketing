@@ -7,36 +7,33 @@ nav {
     width: 100%;
     padding: 0;
     font-family: 'Roboto', sans-serif;  
-  }
 
-  nav{
+    a {
+      color: #232323;
+      padding-top: 2%;
+      font-size: 15px;
+      transition: 0.4s ease;
+    }//this closes the anchor tags
+
+    a:hover{
+      font-size: 18.5px;
+    }//this closes the anchor tag:hover 
+
     @media @tablet{
       background: rgba(194, 210, 29, 0.3);
     }//this closes the tablet media query for nav
-  }//this closes the nav
 
-
-nav{
-  @media @phone{
+    @media @phone{
     display:flex;
     flex-direction: column; 
     height: 43vh;
     padding: 1em;
-  }//this closes the media query for nav
+  }//this closes the phone media query for nav
 }//this closes the nav
 
-  nav a {
-    color: #232323;
-    padding-top: 2%;
-    font-size: 15px;
-    transition: 0.4s ease;
-  }
-  
-  nav a:hover{
-    font-size: 18.5px;
-  }
 
-  // icon seedling
+
+  // icon plant 
   .fas{
     padding-top: 2%; 
     font-size: 2em; 
