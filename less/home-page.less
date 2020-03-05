@@ -59,7 +59,7 @@
           width: 57%;
           height: 31vh;
           border-radius: 2rem; 
-          margin-bottom: 2%;
+          margin-bottom: 2.4%;
       }//this closes the phone media query for box
   }//this closes the box
 
@@ -68,6 +68,13 @@
     height: 100%;
   }
   
+  .box:hover{
+    @media @phone{
+      height: 50%;
+      width: 65%;
+    }//this closes the box:hover media phone query
+  }//this closes the box:hover
+
   .box:hover img{
     transform: rotate(15deg);
   }
@@ -109,9 +116,14 @@
   .box .two{
       @media @phone{
           height: 45%;
-      }
-  }
+      }//this closes phone media query for box two
+  }//this closes box two
 
+  .box .two{
+      @media @tablet{
+       background: rgba(36, 121, 8, 0.7);
+      }//this closes tablet media query for box two
+  }//this closes box two
 
 button{
     cursor: pointer;

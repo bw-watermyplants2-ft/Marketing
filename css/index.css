@@ -30,6 +30,11 @@ ul {
     font-size: 12px;
   }
 }
+@media (max-width: 800px) {
+  ul {
+    color: white;
+  }
+}
 ul li {
   padding-bottom: 5%;
   padding-top: 3%;
@@ -60,6 +65,11 @@ p {
   p {
     padding: 2%;
     font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  p {
+    color: white;
   }
 }
 span {
@@ -116,6 +126,11 @@ footer {
   opacity: 0.35;
   font-family: 'Source Code Pro', monospace;
   font-size: 12px;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 5%;
+  }
 }
 .footer2 {
   background: #58B19F;
@@ -177,12 +192,18 @@ footer {
     width: 57%;
     height: 31vh;
     border-radius: 2rem;
-    margin-bottom: 2%;
+    margin-bottom: 2.4%;
   }
 }
 .box:hover {
   width: 35%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .box:hover {
+    height: 50%;
+    width: 65%;
+  }
 }
 .box:hover img {
   transform: rotate(15deg);
@@ -219,6 +240,11 @@ footer {
 @media (max-width: 500px) {
   .box .two {
     height: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .box .two {
+    background: rgba(36, 121, 8, 0.7);
   }
 }
 button {
