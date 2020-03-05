@@ -9,6 +9,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+}
 h1 {
   padding-top: 2%;
 }
@@ -27,7 +30,7 @@ ul {
 @media (max-width: 500px) {
   ul {
     padding-left: 7.3%;
-    font-size: 12px;
+    font-size: 11.4px;
   }
 }
 @media (max-width: 800px) {
@@ -84,7 +87,7 @@ nav {
   height: 10vh;
   display: flex;
   justify-content: space-around;
-  background: #C9CCD3;
+  background: #a8d1c7;
   opacity: 0.48;
   width: 100%;
   padding: 0;
@@ -104,7 +107,6 @@ nav {
   }
 }
 nav a {
-  text-decoration: none;
   color: #232323;
   padding-top: 2%;
   font-size: 15px;
@@ -136,7 +138,11 @@ footer {
   background: #58B19F;
   opacity: 0.9;
   height: 6em;
-  padding-top: 3%;
+}
+@media (max-width: 500px) {
+  .footer2 {
+    padding-top: 3%;
+  }
 }
 .wrapper {
   width: 100%;
@@ -244,16 +250,16 @@ footer {
 }
 @media (max-width: 800px) {
   .box .two {
-    background: rgba(36, 121, 8, 0.7);
+    background: rgba(112, 181, 89, 0.7);
   }
 }
 button {
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 8%;
   border-radius: 1em;
-  width: 109px;
+  width: 120px;
   height: 30px;
   font-size: 14px;
   background-color: white;
