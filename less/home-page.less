@@ -124,6 +124,12 @@ button{
    flex: 1 1 auto;
   }
   
+  .container{
+    @media @tablet{
+      background: #bcf9d5;  
+    }//this closes the media query for container
+  }//this closes the container
+
   .container a{
     text-decoration: none;
     color: black;
@@ -138,6 +144,13 @@ button{
     padding-top: 10%;
   }
   
+  .top-content{
+    @media @phone{
+      display:flex;
+      flex-direction: column;
+    }//this closes the media query for top-content
+  }//this closes the top-content
+
   .bottom-content{
     display:flex;
     justify-content: space-evenly;
@@ -145,6 +158,14 @@ button{
     align-items: center; 
   }
   
+  .bottom-content{
+    @media @phone{
+      display:flex;
+      flex-direction: column;
+    }//this closes the media query for bottom-content
+  }//this closes the bottom-content
+
+
   .person{
     display:flex;
     flex-direction: column;
