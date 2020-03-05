@@ -9,13 +9,19 @@ nav {
     font-family: 'Roboto', sans-serif;  
   }
 
+  nav{
+    @media @tablet{
+      background: rgba(194, 210, 29, 0.3);
+    }//this closes the tablet media query for nav
+  }//this closes the nav
+
+
 nav{
   @media @phone{
     display:flex;
     flex-direction: column; 
     height: 43vh;
     padding: 1em;
-    background: rgba(194, 210, 29, 0.3);
   }//this closes the media query for nav
 }//this closes the nav
 

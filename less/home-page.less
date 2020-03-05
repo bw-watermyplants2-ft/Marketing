@@ -140,8 +140,7 @@ button{
     justify-content: space-evenly;
     justify-content: center;
     align-items: center; 
-    margin-bottom: 20%;
-    padding-top: 10%;
+    padding-top: 5%;
   }
   
   .top-content{
@@ -173,10 +172,16 @@ button{
     justify-content: center;
     align-items: center; 
     margin-right: 12%;
+    margin-bottom: 10%;
     transition: 0.8s ease;
   }
   
-  
+  .person{
+    @media @phone{
+      margin-bottom: 10%;
+    }//this closes the media query for person
+  }//this closes person
+
   .person:hover {
     font-size: 1.7rem; 
   }

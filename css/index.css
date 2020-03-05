@@ -57,13 +57,17 @@ nav {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 800px) {
+  nav {
+    background: rgba(194, 210, 29, 0.3);
+  }
+}
 @media (max-width: 500px) {
   nav {
     display: flex;
     flex-direction: column;
     height: 43vh;
     padding: 1em;
-    background: rgba(194, 210, 29, 0.3);
   }
 }
 nav a {
@@ -210,8 +214,7 @@ button {
   justify-content: space-evenly;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 @media (max-width: 500px) {
   .top-content {
@@ -238,7 +241,13 @@ button {
   justify-content: center;
   align-items: center;
   margin-right: 12%;
+  margin-bottom: 10%;
   transition: 0.8s ease;
+}
+@media (max-width: 500px) {
+  .person {
+    margin-bottom: 10%;
+  }
 }
 .person:hover {
   font-size: 1.7rem;
