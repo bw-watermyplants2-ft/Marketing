@@ -27,23 +27,51 @@ h1{
     padding: 2.3% 0% 1% 11%;
   }
 
+  ul{
+    @media @phone{
+      padding-left: 7.3%;
+      font-size: 12px;
+    }
+  }
+
   ul li{
     padding-bottom: 5%;
     padding-top: 3%;
+  }
+
+  ul li{
+    @media @phone{
+      padding: 0; 
+    }
   }
 
 img{
     width: 83%;
     height: 75%;
     border-radius: 100%;
-
 } 
+
+img{
+  @media @phone{
+    width: 57%;
+    height: 87%;
+  }
+}
+
+
 
   p{
     width: 100%;
     padding: 4%;
     display:flex; 
     font-family: 'Spartan', sans-serif;
+  }
+
+  p{
+    @media @phone{
+      padding: 2%;
+      font-size: 12px; 
+    }
   }
 
   span{
