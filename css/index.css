@@ -154,12 +154,13 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
-  text-align: center;
   padding-left: 5%;
   border-radius: 1em;
-  width: 90px;
+  width: 109px;
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
+  background-color: white;
+  opacity: 0.8;
 }
 /* Use this mobile view */
 #title {
