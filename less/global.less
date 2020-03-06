@@ -9,7 +9,7 @@ body{
 
 a{
   text-decoration: none;
-  color:black;
+  color:@black;
 }
 
 h1{
@@ -17,7 +17,7 @@ h1{
   }
 
   h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: @heading-font;
   }
 
   h4{
@@ -37,7 +37,7 @@ h1{
     }//this closes the phone media query for ul
   
     @media @tablet{
-      color: white;
+      color: @white;
     }//this closes the tablet media query for ul
   }//this closes the ul
 
@@ -75,7 +75,7 @@ p{
     }//this closes the phone media query for the p tag
  
     @media @tablet{
-      color:white;
+      color: @white;
     }//this closes the tablet media query for the p tag
   }//this closes the p tag
 
@@ -87,7 +87,7 @@ span{
  }//this closes the span
 
  span:hover{
-  color: white; 
+  color: @white; 
 }//this closes the span:hover
 
 

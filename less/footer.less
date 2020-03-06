@@ -1,9 +1,8 @@
 footer{
     width: 100%;   
     height: 4em;
-    display:flex; 
-    flex-direction: column;
-    color: white; 
+    .column();
+    color:@white; 
     opacity: 0.35;
     font-family: 'Source Code Pro', monospace;
     font-size: 12px;
@@ -17,10 +16,10 @@ footer{
 
 
 .footer2{
-    background: #58B19F;
+    background: @turquoise;
     opacity: 0.9;
     height: 6em;
-    
+
     @media @phone{
         padding-top: 3%;
     }//this closes the media query for footer2
