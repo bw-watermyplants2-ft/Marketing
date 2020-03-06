@@ -7,51 +7,92 @@ body{
     margin: 0 auto; 
 }
 
+a{
+  text-decoration: none;
+  color:@font-color;
+}
+
 h1{
     padding-top: 2%; 
   }
 
   h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: @heading-font;
   }
 
   h4{
-    font-family: 'Spartan', sans-serif;
+    font-family: @main-font;
     margin-top: 2%;
   }
 
    
   ul{
-    font-size: 15px;
-    font-family: 'Spartan', sans-serif;
+    font-size: 0.8em;
+    font-family: @main-font;
     padding: 2.3% 0% 1% 11%;
-  }
+  
+    @media @phone{
+      padding-left: 7.3%;
+      font-size: 0.65em;
+    }//this closes the phone media query for ul
+  
+    @media @tablet{
+      color: @white;
+    }//this closes the tablet media query for ul
 
-  ul li{
-    padding-bottom: 5%;
-    padding-top: 3%;
-  }
+    li{
+      padding-bottom: 5%;
+      padding-top: 3%;
+    
+      @media @phone{
+        padding: 0; 
+      }//this closes the phone media query for ul li
+    }//this closes the ul li
+
+  }//this closes the ul
+
+   
 
 img{
     width: 83%;
     height: 75%;
     border-radius: 100%;
 
-} 
+  @media @phone{
+    width: 57%;
+    height: 87%;
+  }//this closes the phone media query for img
+}//this closes the img
 
-  p{
+p{
     width: 100%;
     padding: 4%;
     display:flex; 
-    font-family: 'Spartan', sans-serif;
-  }
+    font-family: @main-font;
+ 
+    @media @phone{
+      padding: 2%;
+      font-size: 0.8em; 
+    }//this closes the phone media query for the p tag
+ 
+    @media @tablet{
+      color: @white;
+    }//this closes the tablet media query for the p tag
+  }//this closes the p tag
 
-  span{
+
+span{
     font-family: 'Source Code Pro', monospace;
-     font-size: 11px;
-   text-align: center; 
- }
+    font-size: 0.6em;
+    text-align: center;   
+   
+    &:hover{
+      color: @white; 
+    }//this closes the span:hover
+    
+ }//this closes the span
 
- span:hover{
-    color: white; 
-  }
+
+
+
+
