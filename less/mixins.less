@@ -14,3 +14,40 @@
     height:100vh;
 }
 
+.custom-btn(@height:30px, @width:100px){
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    border-radius: 1em;
+    width: @width;
+    height: @height;
+    font-size: 14px;
+    opacity: 0.7;
+    color: @font-color;
+    background-color: @button-bg;
+    border-width: 0.5px; 
+    
+}
+
+.background-home(){
+    background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
+    background-size: cover;
+    background-repeat: repeat; 
+}
+
+.custom-box(){
+    width:31%;
+    height: 90%;
+    border-radius: 1rem;
+    overflow: hidden; 
+    opacity: 0.75;
+    transition: 0.3s ease;
+}
+
+
+.fonts(@size, @fam, @color){
+    font-size:@size;
+    font-family:@fam;
+    color:@color;
+  }

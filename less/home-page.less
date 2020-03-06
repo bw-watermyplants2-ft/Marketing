@@ -1,25 +1,19 @@
 .wrapper{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
+    .full();
+    .column();
     flex: 1 1 auto;
-    height: 100vh; 
-    background: url(https://media.giphy.com/media/DFiuYShYwDntm/source.gif);
-    background-size: cover;
-    background-repeat: repeat; 
+    .background-home();
 
     @media @phone{
         height:100%;
     }//this closes the media phone query for wrapper
+
 }//this closes the wrapper
 
 
 #bg{
-    height: 100vh; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    .full();
+    .centered(); 
   }
 
 .content{
@@ -29,26 +23,17 @@
     margin-top: 8%;
 
     @media @phone{
-            width: 100%;
-            height: 100%;
-            display:flex;
-            flex-direction: column;
+            .full();
+            .column();
             margin-top: 6%;
     }//this closes the phone media query for content
 }//this closes the content
 
 .box{
-    width:31%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    .custom-box();
+    .centered();
     flex-wrap: wrap;
-    border-radius: 1rem;
-    overflow: hidden; 
-    opacity: 0.75;
-    transition: 0.3s ease;
- 
+    
     @media @phone{
           width: 57%;
           height: 31vh;
@@ -76,10 +61,8 @@
   .box .one{
     width: 100%;
     height: 50%;
-    background: #317873; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: @darker-blue; 
+    .centered();
   
     @media @phone{
           height: 55%;
@@ -94,39 +77,28 @@
   .box .divider{
     width: 100%;
     height: 10%;
-    background: #fff;
-    display:flex;
-    justify-content: center;
-    align-items: center;  
+    background:@white;
+    .centered(); 
   }
   
   .box .two{
     width: 100%;
     height: 40%;
-    background: #dff9fb; 
+    background: @sky-blue; 
   
     @media @phone{
           height: 45%;
       }//this closes phone media query for box two
 
     @media @tablet{
-        background: rgba(112, 181, 89, 0.7);
+        background: @darker-green;
       }//this closes tablet media query for box two
   }//this closes box two
 
 
 button{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding-left: 8%;
-    border-radius: 1em;
-    width: 120px;
-    height: 30px;
-    font-size: 14px;
-    background-color: white;
-    opacity: 0.8;
-
+    .custom-btn();
+   
     @media @phone{
         padding-left: 7%;
         height: 20px;
@@ -154,7 +126,7 @@ button{
   }//this closes the title
 
   #title:hover{
-    color: white;
+    color: @white;
     }//this closes the hover for title
 
   .container{
@@ -163,8 +135,7 @@ button{
     width: 100%;
     height: 100%; 
     padding-left: 15%;
-    display:flex;
-    flex-direction: column;
+    .column();
    flex: 1 1 auto;
  
     @media @tablet{
@@ -174,37 +145,29 @@ button{
 
   
   .top-content{
-    display:flex;
     justify-content: space-evenly;
-    justify-content: center;
-    align-items: center; 
+    .centered();
     padding-top: 5%;
  
     @media @phone{
-      display:flex;
-      flex-direction: column;
+      .column();
     }//this closes the media query for top-content
   }//this closes the top-content
 
   .bottom-content{
-    display:flex;
     justify-content: space-evenly;
-    justify-content: center;
-    align-items: center; 
+    .centered(); 
  
     @media @phone{
-      display:flex;
-      flex-direction: column;
+      .column();
     }//this closes the media query for bottom-content
   }//this closes the bottom-content
 
 
   .person{
-    display:flex;
-    flex-direction: column;
+    .column();
     justify-content: space-around;
-    justify-content: center;
-    align-items: center; 
+    .centered();
     margin-right: 12%;
     margin-bottom: 10%;
     transition: 0.8s ease;
