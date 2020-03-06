@@ -24,14 +24,14 @@ h4 {
   margin-top: 2%;
 }
 ul {
-  font-size: 15px;
+  font-size: 0.8em;
   font-family: 'Spartan', sans-serif;
   padding: 2.3% 0% 1% 11%;
 }
 @media (max-width: 500px) {
   ul {
     padding-left: 7.3%;
-    font-size: 11.4px;
+    font-size: 0.65em;
   }
 }
 @media (max-width: 800px) {
@@ -68,7 +68,7 @@ p {
 @media (max-width: 500px) {
   p {
     padding: 2%;
-    font-size: 12px;
+    font-size: 0.8em;
   }
 }
 @media (max-width: 800px) {
@@ -78,7 +78,7 @@ p {
 }
 span {
   font-family: 'Source Code Pro', monospace;
-  font-size: 11px;
+  font-size: 0.6em;
   text-align: center;
 }
 span:hover {
@@ -91,17 +91,16 @@ nav {
   background: #a8d1c7;
   opacity: 0.48;
   width: 100%;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 nav a {
   color: #232323;
   padding-top: 2%;
-  font-size: 15px;
+  font-size: 1em;
   transition: 0.4s ease;
 }
 nav a:hover {
-  font-size: 18.5px;
+  font-size: 1.4em;
 }
 @media (max-width: 800px) {
   nav {
@@ -128,7 +127,7 @@ footer {
   color: #fff;
   opacity: 0.35;
   font-family: 'Source Code Pro', monospace;
-  font-size: 12px;
+  font-size: 1em;
 }
 @media (max-width: 500px) {
   footer {
@@ -291,11 +290,11 @@ footer {
   }
 }
 .container #title {
-  position: relative;
-  right: 8%;
   font-size: 2.5em;
   font-family: 'Roboto', sans-serif;
   color: #232323;
+  position: relative;
+  right: 8%;
   text-align: center;
   margin-top: 3%;
 }
